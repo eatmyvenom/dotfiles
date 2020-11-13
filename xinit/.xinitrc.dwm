@@ -1,0 +1,5 @@
+#!/bin/sh
+
+~/.config/autostart.sh >> ~/logs/latest.log
+echo "New session" >> ~/logs/dwm.log
+exec dwm >> ~/logs/dwm.log

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+~/.config/autostart.sh > ~/logs/latest.log
+exec xmonad > ~/logs/xmonad.log

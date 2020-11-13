@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3">
+        <item label="Web Browser"> <action name="Execute">
+            <execute>chromium-browser</execute>
+        </action> </item>
+        <item label="Discord Chat"> <action name="Execute">
+            <execute>/opt/discord/Discord</execute>
+        </action> </item>
+        <item label="Music Player"> <action name="Execute">
+            <execute>/usr/bin/google-play-music-desktop-player</execute>
+        </action></item>
+        <item label="Remote Desktop"> <action name="Execute">
+            <execute>remmina-file-wrapper</execute>
+        </action> </item>
+        <item label="Terminal"> <action name="Execute">
+            <execute>xfce4-terminal --hide-menubar</execute>
+        </action> </item>
+        <item label="File Manager"> <action name="Execute">
+            <execute>pcmanfm</execute>
+        </action> </item>
+        <separator/>
+        <menu id="1" label="Network">
+            <item label="Chromium"> <action name="Execute">
+                <execute>chromium-browser</execute>
+            </action> </item>
+	    <item label="Mozilla Firefox (bin)"> <action name="Execute">
+	        <execute>firefox-bin</execute>
+	   </action> </item>
+            <item label="Discord"> <action name="Execute">
+                <execute>/opt/discord/Discord</execute>
+            </action> </item>
+            <item label="Remmina"> <action name="Execute">
+                <execute>remmina-file-wrapper</execute>
+            </action> </item>
+            <item label="Transmission"> <action name="Execute">
+                <execute>transmission-gtk</execute>
+            </action> </item>
+            <item label="Zoiper"> <action name="Execute">
+                <execute>/opt/Zoiper5/zoiper</execute>
+            </action> </item>
+        </menu>
+	<menu id="5" label="Graphics"> 
+	    <item label="GIMP"> <action name="Execute">
+	    	<execute>gimp</execute>
+	    </action> </item>
+	    <item label="Color Chooser"> <action name="Execute">
+	    	<execute>gcolor2</execute>
+	    </action></item>
+	    <item label="RawTherapee"> <action name="Execute">
+	        <execute>rawtherapee</execute>
+	    </action> </item>
+	</menu>
+        <menu id="2" label="Multimedia">
+            <item label="ALSA mixer"> <action name="Execute">
+                <execute>konsole -e alsamixer</execute>
+            </action> </item>
+            <item label="Google Play Music Desktop Player"> <action name="Execute">
+                <execute>google-play-music-desktop-player</execute>
+            </action> </item>
+            <item label="Pulse Audio Control"> <action name="Execute">
+                <execute>pavucontrol</execute>
+            </action> </item>
+            <item label="VLC media player"> <action name="Execute">
+                <execute>vlc</execute>
+            </action> </item>
+        </menu>
+        <menu id="3" label="Virtual Machines">
+            <item label="Windows 10"> <action name="Execute">
+                    <execute>sudo virsh start win10</execute>
+            </action></item>
+        </menu>
+        <menu id="4" label="System">
+         <item label="Wallpaper"> <action name="Execute">
+          <execute>nitrogen</execute>
+         </action> </item>
+         <item label="GTK Settings"> <action name="Execute">
+          <execute>lxappearance</execute>
+         </action> </item>
+         <item label="Openbox Configuration Manager"> <action name="Execute">
+          <execute>obconf</execute>
+         </action> </item>
+         <item label="Virtual Machine Manager"> <action name="Execute">
+	 	  <execute>virt-manager</execute>
+	     </action> </item>
+          <menu id="41" label="OpenBox">
+            <menu id="client-list-menu"/>
+            <item label="Reconfigure"> <action name="Reconfigure"/> </item>            
+         </menu>
+    </menu>
+            <separator/>
+    <item label="Exit"> <action name="Exit"/> </item>
+</openbox_menu>

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/eatmyvenom/.terminfo/s'
+let g:netrw_dirhist_5='/home/eatmyvenom/.terminfo'
+let g:netrw_dirhist_4='/home/eatmyvenom/.terminfo/s'
+let g:netrw_dirhist_3='/home/eatmyvenom/.terminfo'
+let g:netrw_dirhist_2='/home/eatmyvenom/.config/fish/functions'
+let g:netrw_dirhist_1='/home/eatmyvenom/.config'
+let g:netrw_dirhist_0='/home/eatmyvenom/.zsh.d'
+let g:netrw_dirhist_9='/home/eatmyvenom/.icewm'
+let g:netrw_dirhist_8='/home/eatmyvenom/code/patched/sowm'
+let g:netrw_dirhist_7='/home/eatmyvenom/code/patched/dwm'

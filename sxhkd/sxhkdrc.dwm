@@ -1,0 +1,62 @@
+###################################
+######### General hotkeys #########
+###################################
+
+# lock screen
+super + l
+	betterlockscreen -l
+
+# kill apps
+super + shift + q
+	xdotool windowkill $(xdotool getactivewindow)
+
+alt + F4 
+	xdotool windowkill $(xdotool getactivewindow)
+
+# launch apps
+#super + space
+#	~/.config/rofi/launchers-git/launcher.sh
+
+super + Tab
+	~/.config/rofi/launchers-git/launcher.sh
+
+# switch apps
+alt + Tab
+	~/.config/rofi/switcher.sh
+
+# start terminal
+super + Return
+	kitty
+
+control + shift + t
+	kitty
+
+# take screenshots
+super + shift + s
+	flameshot & flameshot gui
+
+# control sound/music
+XF86AudioPlay
+	playerctl play-pause
+
+XF86AudioNext
+	playerctl next
+
+XF86AudioPrev
+	playerctl previous
+
+XF86AudioStop
+	playerctl stop
+
+XF86AudioMute
+	pamixer -t
+
+XF86AudioRaiseVolume
+	pamixer -i 1
+
+XF86AudioLowerVolume
+	pamixer -d 1
+
+#############################
+######## wm options #########
+#############################
