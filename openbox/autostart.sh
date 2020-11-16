@@ -1,1 +1,1 @@
-../autostart.sh
+/home/eatmyvenom/.config/autostart.sh
