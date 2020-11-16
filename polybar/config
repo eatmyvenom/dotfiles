@@ -6,7 +6,7 @@ margin-top = 0
 
 [bar/mainbar-i3]
 monitor = DP-0
-monitor-strict = false
+monitor-strict = true
 override-redirect = false
 bottom = false
 fixed-center = false
@@ -64,7 +64,7 @@ enable-ipc = true
 monitor = HDMI-0 
 
 monitor-fallback =
-
+override-redirect = false
 fixed-center = false
 
 width = 98%

@@ -8,4 +8,4 @@
 
 style="blurry"
 
-rofi -no-lazy-grab -show window -theme launchers-git/"$style".rasi
+rofi -no-lazy-grab -window-thumbnail -show window -theme launchers-git/"$style".rasi

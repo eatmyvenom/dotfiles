@@ -1,9 +1,12 @@
 /** Configured For Applets **/
 
 configuration {
+  modi: "window,drun,run,ssh"; 
   show-icons:         true;
   icon-theme:         "Candy";
   location: 5;
   yoffset: -50;
   xoffset: -20;
+  terminal: "/usr/bin/kitty";
 }
+

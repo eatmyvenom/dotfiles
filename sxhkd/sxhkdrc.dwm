@@ -20,6 +20,9 @@ alt + F4
 super + Tab
 	~/.config/rofi/launchers-git/launcher.sh
 
+super + shift + Tab
+	kitty /usr/bin/byobu
+
 # switch apps
 alt + Tab
 	~/.config/rofi/switcher.sh
