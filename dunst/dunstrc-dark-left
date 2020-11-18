@@ -19,7 +19,7 @@ font = mplus nerd font 8.5
 
 line_height = 0
 markup = full
-format = "<span size='x-large' font_desc='Cantarell 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='Fira Code 18' weight='normal' foreground='#f9f9f9'><b>%s</b>\n%b</span>"
 alignment = center
 
 idle_threshold = 120
