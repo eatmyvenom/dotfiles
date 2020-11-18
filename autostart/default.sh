@@ -2,7 +2,7 @@ killall -9 picom
 killall -9 polybar
 killall -9 sxhkd
 
-betterlockscreen -l &
+#betterlockscreen -l &
 picom & 
 xrdb ~/.Xresources
 exec ~/.config/polybar/launch.sh &

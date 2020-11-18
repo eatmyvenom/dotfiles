@@ -30,7 +30,7 @@
     copy="cp"                                               \
     javas='archlinux-java'                                  \
     rst="home && c"                                         \
-    testInternet="ping 8.8.8.8"                             \
+    testInternet="ping 8.8.8.8 -c 1"                        \
     fetch='neofetch'                                        \
     gtop='nvidia-smi'                                       \
     del='unlink'                                            \

@@ -12,7 +12,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -34,8 +34,8 @@
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   #padding:
-  #x: 50
-  #y: 50
+  x: 0
+  y: 10
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -49,7 +49,7 @@
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  #decorations: full
+  decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -99,7 +99,7 @@ font:
     family: Fira Mono for Powerline
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Bold 
 
   # Bold font face
   bold:
@@ -135,13 +135,13 @@ font:
     #style: Bold Italic
 
   # Point size
-  #size: 11.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   #offset:
   #  x: 0
-  #  y: 0
+  #  y: 10
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -162,9 +162,9 @@ font:
 # Colors (by eatmyvenom)
 colors:
   # Default colors
-  #primary:
-  #  background: '#181c30'
-  #  foreground: '#ffffff'
+  primary:
+    background: '#181c30'
+    foreground: '#ffffff'
 
     # Bright and dim foreground colors
     #
@@ -221,25 +221,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#1b1d1e'
-    red:     '#f92672'
-    green:   '#82b414'
-    yellow:  '#fd971f'
-    blue:    '#0066cc'
-    magenta: '#8c54fe'
-    cyan:    '#810dbf'
-    white:   '#ccccc6'
+    black:   '#1b1d1e' # color0
+    red:     '#EE0061' # color1
+    green:   '#00D492' # color2
+    yellow:  '#DCDE19' # color3
+    blue:    '#0066cc' # color4
+    magenta: '#8c54fe' # color5
+    cyan:    '#44A3E7' # color6
+    white:   '#ccccc6' # color7
 
   # Bright colors
   bright:
-    black:   '#505354'
-    red:     '#ff5995'
-    green:   '#b6e354'
-    yellow:  '#ffff00'
-    blue:    '#333399'
-    magenta: '#84f4f4'
-    cyan:    '#8442ff'
-    white:   '#f8f8f2'
+    black:   '#505354' # color8
+    red:     '#B5205D' # color9
+    green:   '#00B37B' # color10
+    yellow:  '#B6B82B' # color11
+    blue:    '#333399' # color12
+    magenta: '#6D00CC' # color13
+    cyan:    '#277DBC' # color14
+    white:   '#f8f8f2' # color15
 
   # Dim colors
   #
@@ -328,7 +328,7 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Beam
+  style: Block
 
   # Vi mode cursor style
   #
@@ -340,7 +340,7 @@ cursor:
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  #unfocused_hollow: true
+  unfocused_hollow: true
 
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
