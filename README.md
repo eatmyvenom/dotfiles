@@ -7,4 +7,21 @@ So basically everything here is my configs I use. Most of these are symlinked in
 All of the window managers are meant to be the same look/feel as are the terminals.
 I am gonna make a guidelines file if you want to use this look and feel but with something I have not configured here.
 
+## What is here
 
+* WMs       - 2bwm / awesome / bspwm / dwm / i3 / openbox / sowm
+* Terminals - alacritty / kitty / st / termite / tilda / xterm / urxvt
+* Backround - nitrogen (script for fehbg coming soon)
+* Launcher  - Rofi (dmenu patches and whatnot coming soon)
+* Editor    - Neovim / vim (i should learn emacs)
+* Shells    - Bash / zsh / mksh / tcsh / fish / sh / dash 
+* Hotkeys   - sxhkd
+* Bar       - Polybar
+
+## Other tools
+
+* Screenshots  - flameshot
+* Aur helper   - paru
+* Music player - ytmdesktop
+* Visualizer   - cli-visualizer
+* Compositor   - picom (ibhagwan fork)
