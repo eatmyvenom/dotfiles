@@ -15,13 +15,13 @@
     sudo='sudo -p "Enter user password:"'                   \
     u='clear && ufetch'                                     \
     ul='u | lolcat'                                         \
-    p='clear && pfetch'
-    
+    p='clear && pfetch'                                     \
+    pm='paru'
     
  ###################### Easy things #########################
                                                       alias \
     kernels='ls /boot | grep vmlinuz'                       \
-    root='sudo su -'                                        \
+    root='sudo su root'                                     \
     top='bpytop'                                            \
     math='bc -l'                                            \
     home='cd ~'                                             \
@@ -57,6 +57,8 @@
     tls='tmux ls'                                           \
     ta='tmux attach -t'                                     \
     tn='tmux new -s'                                        \
+    trname='tmux rename-session -t'                         \
+    tnd='tmux new -d -s'                                    \
     trname='tmux rename-session -t'                         \
     tk='tmux kill-session -t'                               \
     tclk='tmux clock-mode'                                  \

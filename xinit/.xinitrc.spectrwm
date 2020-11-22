@@ -1,4 +1,0 @@
-#!/bin/sh
-
-~/.config/autostart.sh > ~/logs/latest.log
-exec spectrwm > ~/logs/spectrwm.log

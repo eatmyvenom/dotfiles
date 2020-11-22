@@ -1,0 +1,5 @@
+#!/bin/sh
+
+~/.config/autostart.sh >> ~/logs/latest.log
+echo "New session" >> ~/logs/herb.log
+exec herbstluftwm >> ~/logs/herb.log

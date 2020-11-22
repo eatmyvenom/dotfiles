@@ -23,6 +23,9 @@ super + Tab
 super + shift + Tab
 	kitty /usr/bin/byobu
 
+super + control + Tab
+	dmenu_run -l 8 -p Run: -nb \#181c30 -nf \#ffffff -fn Fira\ Code
+
 # switch apps
 alt + Tab
 	~/.config/rofi/switcher.sh
