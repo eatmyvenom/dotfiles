@@ -9,10 +9,10 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 
 ## What is here
 
-* WMs       - 2bwm / awesome / bspwm / dwm / i3 / openbox / sowm
+* WMs       - 2bwm / awesome / bspwm / dwm / i3 / openbox / sowm / herbstluftwm
 * Terminals - alacritty / kitty / st / termite / tilda / xterm / urxvt
 * Backround - nitrogen (script for fehbg coming soon)
-* Launcher  - Rofi (dmenu patches and whatnot coming soon)
+* Launcher  - Rofi / dmenu
 * Editor    - Neovim / vim (i should learn emacs)
 * Shells    - Bash / zsh / mksh / tcsh / fish / sh / dash 
 * Hotkeys   - sxhkd
@@ -24,4 +24,4 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Aur helper   - paru
 * Music player - ytmdesktop
 * Visualizer   - cli-visualizer
-* Compositor   - picom (ibhagwan fork)
+* Compositor   - picom 
