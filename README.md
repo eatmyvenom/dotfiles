@@ -11,17 +11,18 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 
 * WMs       - 2bwm / awesome / bspwm / dwm / i3 / openbox / sowm / herbstluftwm
 * Terminals - alacritty / kitty / st / termite / tilda / xterm / urxvt
-* Backround - nitrogen (script for fehbg coming soon)
+* Backround - nitrogen / feh
 * Launcher  - Rofi / dmenu
 * Editor    - Neovim / vim (i should learn emacs)
 * Shells    - Bash / zsh / mksh / tcsh / fish / sh / dash 
 * Hotkeys   - sxhkd
 * Bar       - Polybar
 
-## Other tools
+## Other stuff
 
 * Screenshots  - flameshot
 * Aur helper   - paru
 * Music player - ytmdesktop
 * Visualizer   - cli-visualizer
 * Compositor   - picom 
+* GTK theme    - Arc-dark
