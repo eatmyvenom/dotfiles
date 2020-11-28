@@ -34,7 +34,8 @@
     fetch='neofetch'                                        \
     gtop='nvidia-smi'                                       \
     del='unlink'                                            \
-    delete='unlink'                                         
+    delete='unlink'                                         \
+    unixtime='date +%s'                                     
 
 
 ##################### Actual aliases #########################
@@ -50,8 +51,9 @@
     svim='sudo nvim'                                        \
     svi='sudo nvim'                                         \
     fln='grep -rnw'                                         \
-    findline='grep -rnw'                                    
-    
+    findline='grep -rnw'                                    \
+    scho='sudo echo'                                        
+
 ######################## Tmux ###############################
                                                       alias \
     tls='tmux ls'                                           \

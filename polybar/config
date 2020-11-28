@@ -17,6 +17,7 @@ height = 60
 border-color = #00000000
 border-top-size = 20
 border-left-size = 50
+border-right-size = 0
 border-bottom-size = 0
 
 offset-x = 0%
@@ -167,10 +168,10 @@ none = #00000000
 type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
-format-volume-background = #00d492
-format-volume-foreground = ${color.fg-alt}
+format-volume-background = #44a3e7
+format-volume-foreground = ${color.fg}
 format-volume-padding = 2
-format-volume-underline = #00b37b
+format-volume-underline = #44a3e7
 
 label-volume = %percentage%%
 
@@ -200,9 +201,9 @@ interval = 0.25
 
 format = <label>
 format-prefix = 
-format-background = #ee0061
-format-foreground = ${color.fg-alt}
-format-underline = #b5205d
+format-underline = #ee0061
+format-foreground = ${color.fg}
+#format-underline = #b5205d
 format-padding = 2
 label = " %percentage%%"
 
@@ -217,10 +218,10 @@ time =  %I:%M:%S %p
 time-alt =  %Y-%m-%d%
 
 format = <label>
-format-background = #8c54fe
-format-foreground = ${color.bg}
+format-underline = #8C54fe
+format-foreground = ${color.fg}
 format-padding = 2
-format-underline = #6d00cc
+#format-underline = #6d00cc
 label = %time%
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -232,11 +233,11 @@ interval = 0.5
 
 format = <label>
 format-prefix = 
-format-background = #0066cc
-format-foreground = ${color.fg-alt}
+format-underline = #0066cc
+format-foreground = ${color.fg}
 format-padding = 1
 label = " %gb_used%"
-format-underline = #333399
+#format-underline = #333399
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -252,7 +253,7 @@ content-padding = 0
 
 [module/kernel]
 type = custom/script
-exec = uname -r
+exec = echo $(uname -r) on $(uname -n) 
 tail = false
 interval = 999999999
 
@@ -268,10 +269,10 @@ format-padding = 2
 [module/rofi]
 type = custom/text
 content ="      "
-content-background = ${color.cyan}
+content-underline = #0066cc
 format = <label>
 format-prefix = ""
-format-background = #44a3e7
+format-underline = #0066cc
 label = "%content%"
 click-left = ~/.config/rofi/launchers-git/launcher.sh
 click-right = dmenu_run
@@ -284,12 +285,12 @@ format-padding = 0
 [module/terminal]
 type = custom/text
 content ="      " 
-content-background = ${color.grey}
+content-underline = #ee0061
 click-left = kitty &
 format-prefix = ""
 format-foreground = ${color.fg}
-format-background = ${color.cyan}
-format-prefix-background = ${color.grey}
+format-underline = #ee0061
+format-prefix-background = #ee0061
 format-padding = 0
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -297,7 +298,7 @@ format-padding = 0
 [module/web]
 type = custom/text
 content = "      "
-content-background = ${color.red}
+content-underline = #8c54fe
 click-left = firefox-nightly & 
 format-prefix = ""
 format-padding = 0
@@ -312,7 +313,7 @@ format-background = ${color.alpha}
 format-foreground = aaffffff
 format-padding = 1
 
-label =| %title%
+label =%title%
 label-maxlen = 25
 
 label-empty = |

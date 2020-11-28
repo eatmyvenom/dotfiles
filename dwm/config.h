@@ -124,6 +124,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Right,  focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_Left,   focusstack,     {.i = -1 } },
 
+	{ MODKEY,                       XK_minus,  setgaps,        {.i = -5 } },
+	{ MODKEY,                       XK_equal,  setgaps,        {.i = +5 } },
+	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = gappx  } },
+
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[3]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
@@ -139,10 +143,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_Up,      movestack,      {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_Down,    movestack,      {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_Right,   movestack,      {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_Left,    movestack,      {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_Up,     movestack,      {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_Down,   movestack,      {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_Right,  movestack,      {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_Left,   movestack,      {.i = -1 } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)

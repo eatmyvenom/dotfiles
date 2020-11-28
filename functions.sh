@@ -1,8 +1,8 @@
 function updateall() {
-	yay -Syu --devel
-	echo "\n----raspi----"
+	paru 
+	echo "\n\n----raspi----\n\n"
 	pi -t "sudo pacman -Syu"
-	echo "\n----laptop----"
+	echo "\n\n----laptop----\n\n"
 	laptop -t "sudo xbps-install -Su"
 }
 
@@ -15,10 +15,3 @@ function mkcd() {
 	mkdir $1
 	cd $1
 }
-
-function sf() {
-	clear
-	screenfetch
-}
-
-# source ~/.config/xbps
