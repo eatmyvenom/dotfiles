@@ -1,6 +1,7 @@
 # dotfiles
 my linux dotfiles with my cool shit
 
+this image is slightly out of date but gets the point across:
 <img src="https://raw.githubusercontent.com/eatmyvenom/dotfiles/main/images/main.png">
 
 So basically everything here is my configs I use. Most of these are symlinked into other locations so that I can use them easily.
