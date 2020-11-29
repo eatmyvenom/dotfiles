@@ -14,16 +14,27 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Terminals - alacritty / kitty / st / termite / tilda / xterm / urxvt
 * Backround - nitrogen / feh
 * Launcher  - Rofi / dmenu
-* Editor    - Neovim / vim (i should learn emacs)
+* Editor    - neovim (i should learn emacs)
 * Shells    - Bash / zsh / mksh / tcsh / fish / sh / dash 
 * Hotkeys   - sxhkd
 * Bar       - Polybar
 
 ## Other stuff
 
-* Screenshots  - flameshot
+* Screenshots  - flameshot (I can do some scrot scripts soon)
 * Aur helper   - paru
-* Music player - ytmdesktop
+* Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
 * Compositor   - picom 
 * GTK theme    - Arc-dark
+* QT theme     - None yet
+
+
+
+### Deps
+
+So here is the paru/yay command to get the stuff to recreate this no matter what terminal/wm
+
+```
+paru -S sxhkd-git polybar-git neofetch feh cli-visualizer picom flameshot rofi
+```
