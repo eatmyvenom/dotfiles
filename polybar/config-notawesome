@@ -175,7 +175,7 @@ format-volume-underline = #44a3e7
 
 label-volume = %percentage%%
 
-format-muted-prefix = " "
+format-muted-prefix = " Muted "
 format-muted-background = #82b414
 
 format-muted-foreground = #00d492
@@ -183,14 +183,14 @@ format-muted-padding = 2
 label-muted = "Muted"
 format-muted-underline = #000000
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-4 = 
+ramp-volume-0 = Lowest
+ramp-volume-1 = Lower
+ramp-volume-2 = Medium
+ramp-volume-3 = More
+ramp-volume-4 = Ouch
 
-ramp-headphones-0 = 
-ramp-headphones-1 = 
+ramp-headphones-0 = +
+ramp-headphones-1 = -
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -200,7 +200,7 @@ type = internal/cpu
 interval = 0.25
 
 format = <label>
-format-prefix = 
+format-prefix =
 format-underline = #ee0061
 format-foreground = ${color.fg}
 #format-underline = #b5205d
@@ -214,8 +214,8 @@ type = internal/date
 
 interval = 0.01
 
-time =  %I:%M:%S %p
-time-alt =  %Y-%m-%d%
+time = %I:%M:%S %p
+time-alt = %Y-%m-%d%
 
 format = <label>
 format-underline = #8C54fe
@@ -232,7 +232,7 @@ type = internal/memory
 interval = 0.5
 
 format = <label>
-format-prefix = 
+format-prefix = 
 format-underline = #0066cc
 format-foreground = ${color.fg}
 format-padding = 1
@@ -260,7 +260,7 @@ interval = 999999999
 radius-top = 20
 format-foreground = ${color.fg}
 format-background = ${color.alpha}
-format-prefix = ""
+format-prefix = 
 format-prefix-foreground = #aaffffff
 format-padding = 2
 
@@ -268,7 +268,7 @@ format-padding = 2
 
 [module/rofi]
 type = custom/text
-content ="      "
+content ="   Rofi   "
 content-underline = #0066cc
 format = <label>
 format-prefix = ""
@@ -284,7 +284,7 @@ format-padding = 0
 
 [module/terminal]
 type = custom/text
-content ="      " 
+content ="  Term  " 
 content-underline = #ee0061
 click-left = kitty &
 format-prefix = ""
@@ -297,7 +297,7 @@ format-padding = 0
 
 [module/web]
 type = custom/text
-content = "      "
+content = "   Web   "
 content-underline = #8c54fe
 click-left = firefox-nightly & 
 format-prefix = ""

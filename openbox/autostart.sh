@@ -1,1 +1,1 @@
-/home/eatmyvenom/.config/autostart.sh
+/home/eatmyvenom/dots/autostart/default.sh

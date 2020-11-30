@@ -35,7 +35,8 @@
     gtop='nvidia-smi'                                       \
     del='unlink'                                            \
     delete='unlink'                                         \
-    unixtime='date +%s'                                     
+    unixtime='date +%s'                                     \
+    c="clear && neofetch"
 
 
 ##################### Actual aliases #########################
