@@ -32,3 +32,35 @@ Terminal configs should follow these guidelines here
 * Font - Fira Mono Bold for Powerline
 * Cursor - Block
 * Transparency - 60%
+
+
+## WM
+
+Window manager configs should follow these guiidelines here
+
+### General stuff
+* Gaps - 20px
+* Tiling mode - Dwindle
+* Workspaces - 9
+* Borders - none
+* Autostart - ~/.config/autostart.sh
+* Focus - follow pointer
+* Pointer - follow focus
+
+### Keys
+
+This should just be based on your preferance but you can submit a pr with a new wm with these keys
+
+Mod = `Super / Win / Mod4 / whatever you want to call it`
+
+* `Mod+1-9` = Workspace 1-9
+* `Mod+Shift+1-9` = Move current window to workspace 1-9
+* `Mod+Direction Arrow` = Move focus direction
+* `Mod+Tab` = Open launcher
+* `Alt+Tab` = Seriously?
+* `Mod+Shift+Q` = Kill focused window
+* `Mod+Shift+E` = Kill window manager
+* `Mod+Shift+R` = Restart window manager
+* `Mod+L` = Lock screen
+
+For anything else look at some of the extra keys on other wms already configured
