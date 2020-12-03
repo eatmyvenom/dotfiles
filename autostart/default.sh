@@ -4,6 +4,7 @@ killall -9 sxhkd
 
 picom --experimental-backends -b & 
 xrdb ~/.Xresources
+#exec ~/.config/polybar/launch-notawesome.sh &
 exec ~/.config/polybar/launch.sh &
 ~/scripts/notifications.sh &
 feh --bg-fill ~/Pictures/wallpaper/wallpaper.jpg ~/Pictures/wallpaper/wallpaper2.jpg 
