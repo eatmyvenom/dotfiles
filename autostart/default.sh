@@ -6,6 +6,6 @@ picom --experimental-backends -b &
 xrdb ~/.Xresources
 exec ~/.config/polybar/launch.sh &
 ~/scripts/notifications.sh &
-nitrogen --restore &
+feh --bg-fill ~/Pictures/wallpaper/wallpaper.jpg ~/Pictures/wallpaper/wallpaper2.jpg 
 xrandr --output DP-0 --mode 3840x2160 --scale 1x1 --pos 0x0 --output HDMI-0 --mode 1920x1080 --scale 1x1 --pos -1920x0 &
 sxhkd &

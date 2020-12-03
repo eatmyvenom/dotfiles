@@ -1,9 +1,9 @@
 -- awesome_mode: api-level=4:screen=on
 pcall(require, "luarocks.loader")
 
+require("awful.autofocus")
 local gears = require("gears")
 local awful = require("awful")
-require("awful.autofocus")
 local beautiful = require("beautiful")
 local wibox = require("wibox")
 local naughty = require("naughty")
@@ -40,10 +40,10 @@ mymainmenu = awful.menu({items={{"awesome",myawesomemenu,beautiful.awesome_icon}
 mylauncher = awful.widget.launcher({image=beautiful.awesome_icon,menu=mymainmenu})
 
 tag.connect_signal("request::default_layouts",function()
-    awful.layout.append_default_layouts({
+        awful.layout.append_default_layouts({
         awful.layout.suit.spiral,
-	awful.layout.suit.spiral.dwindle,
-	awful.layout.suit.floating,
+	    awful.layout.suit.spiral.dwindle,
+	    awful.layout.suit.floating,
         awful.layout.suit.tile,
         awful.layout.suit.tile.left,
         awful.layout.suit.tile.bottom,
@@ -108,7 +108,7 @@ awful.keyboard.append_global_keybindings({
 
               {description = "show main menu", group = "awesome"}),
 
-    awful.key({ modkey, "Shift" }, "r", awesome.restart,
+    awful.key({ modkey, "Shift" },   "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
 
     awful.key({ modkey, "Shift"   }, "e", awesome.quit,
@@ -150,10 +150,10 @@ awful.keyboard.append_global_keybindings({
 	
     ),
 
-    	awful.key({ modkey, "Control"    }, "Right",     function () awful.tag.incmwfact( 0.01)    end),
-	awful.key({ modkey, "Control"    }, "Left",     function () awful.tag.incmwfact(-0.01)    end),
-	awful.key({ modkey, "Control"    }, "Down",     function () awful.client.incwfact( 0.01)    end),
-	awful.key({ modkey, "Control"    }, "Up",     function () awful.client.incwfact(-0.01)    end),
+    awful.key({ modkey, "Control"    }, "Right",    function () awful.tag.incmwfact( 0.01)   end),
+	awful.key({ modkey, "Control"    }, "Left",     function () awful.tag.incmwfact(-0.01)   end),
+	awful.key({ modkey, "Control"    }, "Down",     function () awful.client.incwfact( 0.01) end),
+	awful.key({ modkey, "Control"    }, "Up",       function () awful.client.incwfact(-0.01) end),
 
 })
 
@@ -302,25 +302,21 @@ client.connect_signal("request::titlebars", function(c)
 	    end)
 	)
 	top_titlebar : setup {
-	{ -- Left
+	{
 	        awful.titlebar.widget.iconwidget(c),
 	        buttons = buttons,
 	        layout  = wibox.layout.fixed.horizontal
     	},
-    	{ -- Middle
-        	{ -- Title
+    	{ 
+        	{ 
             		align  = 'center',
             		widget = awful.titlebar.widget.titlewidget(c)
         	},
         	buttons = buttons,
         	layout  = wibox.layout.flex.horizontal
     	},
-    	{ -- Right
+    	{
         	awful.titlebar.widget.floatingbutton (c),
-        	--awful.titlebar.widget.maximizedbutton(c),
-        	--awful.titlebar.widget.stickybutton   (c),
-        	--awful.titlebar.widget.ontopbutton    (c),
-        	--awful.titlebar.widget.closebutton    (c),
         	layout = wibox.layout.fixed.horizontal()
     	},
     	layout = wibox.layout.align.horizontal
@@ -330,7 +326,6 @@ client.connect_signal("request::titlebars", function(c)
 end)
 
 ruled.client.connect_signal("request::rules", function()
-    -- All clients will match this rule.
     ruled.client.append_rule {
         id         = "global",
         rule       = { },
@@ -350,7 +345,6 @@ ruled.client.connect_signal("request::rules", function()
 end)
 
 client.connect_signal("request::titlebars", function(c)
-    -- buttons for the titlebar
     local buttons = {
         awful.button({ }, 1, function()
             c:activate { context = "titlebar", action = "mouse_move"  }

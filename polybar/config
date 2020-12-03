@@ -168,7 +168,6 @@ none = #00000000
 type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
-format-volume-background = #44a3e7
 format-volume-foreground = ${color.fg}
 format-volume-padding = 2
 format-volume-underline = #44a3e7

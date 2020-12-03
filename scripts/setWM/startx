@@ -1,0 +1,4 @@
+#/bin/sh
+wm=$1
+"./${wm}.sh"
+exec "/usr/bin/startx" >> ~/logs/bruh.log
