@@ -1,4 +1,4 @@
 #/bin/sh
 wm=$1
-"./${wm}.sh"
-exec "/usr/bin/startx" >> ~/logs/bruh.log
+"~/dots/scripts/setWM${wm}.sh"
+exec "/usr/bin/startx"
