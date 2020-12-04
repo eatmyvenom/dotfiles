@@ -24,7 +24,7 @@ super + shift + Tab
 	kitty /usr/bin/byobu
 
 super + control + Tab
-	dmenu_run -l 8 -p Run: -nb \#181c30 -nf \#ffffff -fn Fira\ Code
+	dmenu_run -l 8 -sb \#0066cc -fn Fira\ Code -o 0.8 -dim 0.004 -w 800 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")/2-400)) -y 1000   
 
 # switch apps
 alt + Tab
