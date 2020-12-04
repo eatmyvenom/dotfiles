@@ -25,9 +25,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
 * Compositor   - picom 
-* GTK theme    - Arc-dark
-* QT theme     - None yet
-
+* GTK theme    - Arc-dark (I really want a custom one and ill work on that but if anyone can help with that ill love you forever)
 
 
 ### Deps
