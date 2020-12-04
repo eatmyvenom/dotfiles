@@ -53,7 +53,8 @@
     svi='sudo nvim'                                         \
     fln='grep -rnw'                                         \
     findline='grep -rnw'                                    \
-    scho='sudo echo'                                        
+    scho='sudo echo'                                        \
+    icat='kitty +kitten icat'                               
 
 ######################## Tmux ###############################
                                                       alias \
