@@ -12,7 +12,7 @@
     mkdir='mkdir -pv'                                       \
     pacman='sudo pacman'                                    \
     grep='grep --color'                                     \
-    sudo='sudo -p "Enter user password:"'                   \
+    sudo='sudo -p "Enter user password: "'                  \
     u='clear && ufetch'                                     \
     ul='u | lolcat'                                         \
     p='clear && pfetch'                                     \
@@ -36,7 +36,9 @@
     del='unlink'                                            \
     delete='unlink'                                         \
     unixtime='date +%s'                                     \
-    c="clear && neofetch"
+    c="clear && neofetch"                                   \
+    zip="tar -czvf"                                         \
+    unzip="tar -xzvf"
 
 
 ##################### Actual aliases #########################
