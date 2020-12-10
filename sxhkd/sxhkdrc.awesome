@@ -33,7 +33,7 @@ control + shift + t
 
 # take screenshots
 super + shift + s
-	flameshot gui
+	gscreenshot -c -s
 
 # control sound/music
 XF86AudioPlay

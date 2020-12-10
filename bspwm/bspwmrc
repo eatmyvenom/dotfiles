@@ -9,7 +9,7 @@ bspc monitor HDMI-0 -d V VI VII VIII IX X
 
 # borders and gaps
 
-bspc config border_width         3
+bspc config border_width         0
 bspc config window_gap           20
 bspc config active_border_color "#0066cc"
 bspc config focused_border_color "#0066cc"

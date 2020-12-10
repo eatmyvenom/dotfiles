@@ -21,7 +21,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 
 ## Other stuff
 
-* Screenshots  - flameshot (I can do some scrot scripts soon)
+* Screenshots  - gscreenshot (I can do some bare scrot scripts soon)
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
 * Compositor   - picom 
@@ -34,7 +34,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 So here is the base of what is required to get the stuff to recreate this no matter what terminal/wm
 
 ```
-sxhkd polybar neofetch feh cli-visualizer picom flameshot rofi
+sxhkd polybar neofetch feh cli-visualizer picom gscreenshot rofi
 ```
 
 if you want a command to paste in your terminal for this then here
@@ -43,20 +43,20 @@ if you want a command to paste in your terminal for this then here
 
 with paru
 ```
-paru -S sxhkd-git polybar-git neofetch feh cli-visualizer picom flameshot rofi
+paru -S sxhkd-git polybar-git neofetch feh cli-visualizer picom gscreenshot rofi
 ```
 
 or for yay
 ```
-yay -S sxhkd-git polybar-git neofetch feh cli-visualizer picom flameshot rofi
+yay -S sxhkd-git polybar-git neofetch feh cli-visualizer picom gscreenshot rofi
 ```
 
 or without aur
 ```
-pacman -S sxhkd polybar neofetch feh cli-visualizer picom flameshot rofi
+pacman -S sxhkd polybar neofetch feh cli-visualizer picom gscreenshot rofi
 ```
 
 #### Void
 ```
-xbps-install sxhkd polybar neofetch feh cli-visualizer picom flameshot rofi
+xbps-install sxhkd polybar neofetch feh cli-visualizer picom gscreenshot rofi
 ```
