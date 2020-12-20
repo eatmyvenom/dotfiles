@@ -37,6 +37,7 @@
     delete='unlink'                                         \
     unixtime='date +%s'                                     \
     c="clear && neofetch"                                   \
+    cronstatus="plss \$(pidof crond)"                       \
     zip="tar -czvf"                                         \
     unzip="tar -xzvf"                                       \
     temp="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"  \

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/home/eatmyvenom/repo/my-st'
 let g:netrw_dirhist_5='/home/eatmyvenom/pkgs'
 let g:netrw_dirhist_4='/home/eatmyvenom/.config/gtk-3.0'
 let g:netrw_dirhist_3='/home/eatmyvenom/.config/herbstluftwm'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/home/eatmyvenom/Applications'
 let g:netrw_dirhist_9='/usr/share/applications'
 let g:netrw_dirhist_8='/home/eatmyvenom/Applications'
 let g:netrw_dirhist_7='/home/eatmyvenom/dots/dwm'
-let g:netrw_dirhist_6='/home/eatmyvenom/.terminfo/s'

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+exec polybar --reload mainbar-i3 &
+exec polybar --reload altbar-i3 
+ 
