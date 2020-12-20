@@ -10,23 +10,28 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 
 ## What is here
 
-* WMs       - 2bwm / awesome / bspwm / dwm / i3 / openbox / sowm / herbstluftwm
-* Terminals - alacritty / kitty / st / termite / tilda / xterm / urxvt / aterm
-* Backround - nitrogen / feh
-* Launcher  - Rofi / dmenu
-* Editor    - neovim
-* Shells    - Bash / zsh / mksh / tcsh / fish / sh / dash 
-* Hotkeys   - sxhkd
-* Bar       - Polybar (I'll do a tint2 some day)
+* WMs             - 2bwm / awesome / bspwm / dwm / i3 / openbox / sowm / herbstluftwm
+* Terminals       - alacritty / kitty / st / termite / tilda / xterm / urxvt / aterm
+* Backround       - nitrogen / feh
+* Launcher        - Rofi / dmenu
+* Editor          - neovim
+* Shells          - Bash / zsh / mksh / tcsh / fish / sh / dash 
+* Hotkeys         - sxhkd
+* Bar             - Polybar (I'll do a tint2 some day)
+* Process Monitor - Runit
 
 ## Other stuff
 
 * Screenshots  - gscreenshot (I can do some bare scrot scripts soon)
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
-* Compositor   - picom 
+* Compositor   - picom-git 
 * X Session    - lxsession (just because it works well with lxappearance)
 * GTK theme    - Arc-dark (I really want a custom one and ill work on that but if anyone can help with that ill love you forever)
+
+### Notes
+
+Recently I have moved from my autostart script just starting things to having `runit` monitor and supervise processes. This shift has been quite easy and runit has been great to use. If you want to not use runit then just use the default script in autostart, otherwise use the runit script.
 
 
 ### Deps
