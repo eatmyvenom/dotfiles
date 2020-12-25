@@ -1,0 +1,27 @@
+# $Id$
+# Maintainer: Eatmyvenom <eatmyvenom at gmail>
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Dag Odenhall <dag.odenhall@gmail.com>
+# Contributor: Grigorios Bouzakis <grbzks@gmail.com>
+
+pkgname=dmenu
+pkgver=0.2.1
+pkgrel=2
+pkgdesc="Dmenu by suckless"
+url="http://dmenu.suckless.org"
+arch=('i686' 'x86_64')
+license=('MIT')
+options=(zipman)
+depends=('libxinerama' 'libxft')
+source=(https://github.com/eatmyvenom/dotfiles/raw/main/dmenu/dmenu.tar.gz)
+sha256sums=('SKIP')
+
+build() {
+  cd "$srcdir/"
+  make 
+}
+
+package() {
+  cd "$srcdir/"
+  make PREFIX=/usr DESTDIR="$pkgdir" install
+}
