@@ -1,4 +1,7 @@
 #!/bin/sh
+
+dbus-launch > /tmp/dbus-address-temp-file
+source /tmp/dbus-address-temp-file
 runsvdir ~/dots/runit/runsvdir &
 
 xrdb ~/.Xresources
