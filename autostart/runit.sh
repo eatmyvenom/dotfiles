@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dbus-launch > /tmp/dbus-address-temp-file
+dbus-launch --sh-syntax --exit-with-session > /tmp/dbus-address-temp-file
 source /tmp/dbus-address-temp-file
 runsvdir ~/dots/runit/runsvdir &
 
