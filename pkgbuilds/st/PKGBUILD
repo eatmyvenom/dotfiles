@@ -13,7 +13,7 @@ arch=('i686' 'x86_64')
 license=('MIT')
 options=(zipman)
 depends=('libxinerama' 'libxft')
-source=(https://github.com/eatmyvenom/dotfiles/raw/main/st/st.tar.gz)
+source=(https://github.com/eatmyvenom/dotfiles/raw/main/terminals/st/st.tar.gz)
 sha256sums=('SKIP')
 
 build() {
