@@ -1,1 +1,0 @@
-/home/eatmyvenom/dots/autostart/default.sh
