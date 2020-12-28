@@ -6,7 +6,7 @@
 
 pkgname=st
 pkgver=0.8.4
-pkgrel=2
+pkgrel=3
 pkgdesc="ST by suckless"
 url="http://st.suckless.org"
 arch=('i686' 'x86_64')

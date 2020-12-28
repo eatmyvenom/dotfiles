@@ -4,3 +4,6 @@
 [submodule "terminals/terminals/st"]
 	path = terminals/terminals/st
 	url = https://github.com/eatmyvenom/st
+[submodule "terminals/st"]
+	path = terminals/st
+	url = https://github.com/eatmyvenom/st
