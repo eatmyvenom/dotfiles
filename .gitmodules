@@ -1,0 +1,3 @@
+[submodule "WMs/dwm"]
+	path = WMs/dwm
+	url = https://github.com/eatmyvenom/dwm
