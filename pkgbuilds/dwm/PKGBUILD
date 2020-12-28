@@ -6,14 +6,14 @@
 
 pkgname=dwm
 pkgver=6.2
-pkgrel=3
+pkgrel=4
 pkgdesc="A dynamic window manager for X"
 url="http://dwm.suckless.org"
 arch=('i686' 'x86_64')
 license=('MIT')
 options=(zipman)
 depends=('libx11' 'xorg-xsetroot' 'libxinerama' 'libxft' 'freetype2')
-source=(https://github.com/eatmyvenom/dotfiles/raw/main/WMs/dwm/dwm.tar.gz)
+source=(https://github.com/eatmyvenom/dwm/raw/41f34a79cfe16c1ad11a6a8ea7724311ce04e04b/dwm.tar.gz)
 sha256sums=('SKIP')
 prepare() {
   cd "$srcdir/"
