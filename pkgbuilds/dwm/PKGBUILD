@@ -13,7 +13,7 @@ arch=('i686' 'x86_64')
 license=('MIT')
 options=(zipman)
 depends=('libx11' 'xorg-xsetroot' 'libxinerama' 'libxft' 'freetype2')
-source=(https://github.com/eatmyvenom/dwm/raw/41f34a79cfe16c1ad11a6a8ea7724311ce04e04b/dwm.tar.gz)
+source=(https://github.com/eatmyvenom/dwm/raw/main/dwm.tar.gz)
 sha256sums=('SKIP')
 prepare() {
   cd "$srcdir/"

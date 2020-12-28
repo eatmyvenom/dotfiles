@@ -1,3 +1,6 @@
 [submodule "WMs/dwm"]
 	path = WMs/dwm
 	url = https://github.com/eatmyvenom/dwm
+[submodule "terminals/terminals/st"]
+	path = terminals/terminals/st
+	url = https://github.com/eatmyvenom/st
