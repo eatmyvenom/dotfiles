@@ -64,3 +64,9 @@ Mod = `Super / Win / Mod4 / whatever you want to call it`
 * `Mod+L` = Lock screen
 
 For anything else look at some of the extra keys on other wms already configured
+
+## Processes
+
+Add it to the autostart and make a runit script for it as well.
+
+

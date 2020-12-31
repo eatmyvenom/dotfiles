@@ -18,21 +18,26 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Shells          - Bash / zsh / mksh / tcsh / fish / sh / dash 
 * Hotkeys         - sxhkd
 * Bar             - Polybar (I'll do a tint2 some day)
-* Process Monitor - Runit
+* Process Manager - Runit
+* Multiplexer     - Tmux (dtach and stuff coming soon)
 
 ## Other stuff
 
 * Screenshots  - gscreenshot (I can do some bare scrot scripts soon)
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
+* File browser - lf / ranger
+* Web browser  - firefox-nightly
+* IDE          - VScode
 * Compositor   - picom-git 
-* X Session    - lxsession (just because it works well with lxappearance)
+* Session      - Custom / lxsession
 * GTK theme    - Arc-dark (I really want a custom one and ill work on that but if anyone can help with that ill love you forever)
 
 ### Notes
 
 Recently I have moved from my autostart script just starting things to having `runit` monitor and supervise processes. This shift has been quite easy and runit has been great to use. If you want to not use runit then just use the default script in autostart, otherwise use the runit script.
 
+The runit configuration requires you to 
 
 ### Deps
 
