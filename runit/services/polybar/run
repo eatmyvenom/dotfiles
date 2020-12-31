@@ -2,6 +2,5 @@
 
 killall -9 polybar
 
-exec polybar --reload mainbar-i3 &
-exec polybar --reload altbar-i3 
+exec polybar --reload mainbar-i3
  
