@@ -2,10 +2,6 @@
 ######### General hotkeys #########
 ###################################
 
-# lock screen
-super + l
-	betterlockscreen -l
-
 # kill apps
 super + shift + q
 	xdotool windowkill $(xdotool getactivewindow)
@@ -14,14 +10,9 @@ alt + F4
 	xdotool windowkill $(xdotool getactivewindow)
 
 # launch apps
-#super + space
-#	~/.config/rofi/launchers-git/launcher.sh
 
 super + Tab
 	~/.config/rofi/launchers-git/launcher.sh
-
-super + shift + Tab
-	kitty /usr/bin/byobu
 
 super + control + Tab
 	dmenu_run -l 8 -sb \#0066cc -fn Fira\ Code -o 0.8 -dim 0.004 -w 800 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")/2-400)) -y 1000   
@@ -32,10 +23,7 @@ alt + Tab
 
 # start terminal
 super + Return
-	kitty
-
-control + shift + t
-	kitty
+	~/dots/scripts/terminal
 
 # take screenshots
 super + shift + s
