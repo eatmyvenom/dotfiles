@@ -10,7 +10,6 @@
     mkx='chmod +x'                                          \
     clr='clear'                                             \
     mkdir='mkdir -pv'                                       \
-    pacman='sudo pacman'                                    \
     grep='grep --color'                                     \
     sudo='sudo -p "Enter user password: "'                  \
     u='clear && ufetch'                                     \
