@@ -25,7 +25,7 @@ Terminal configs should follow these guidelines here
 * Color 14 - `#277dbc`
 * Color 15 - `#f8f8f2`
 * Background - `#181c30`
-* Foreground - `#ffffff` 
+* Foreground - `#e6f2ff` 
 
 ### Other stuff
 
@@ -41,7 +41,7 @@ Window manager configs should follow these guiidelines here
 ### General stuff
 * Gaps - 20px
 * Tiling mode - Dwindle
-* Workspaces - 9
+* Workspaces - 9 (per moniter if possible)
 * Borders - none
 * Autostart - ~/.config/autostart.sh
 * Focus - follow pointer
