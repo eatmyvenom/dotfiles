@@ -15,7 +15,8 @@
     u='clear && ufetch'                                     \
     ul='u | lolcat'                                         \
     p='clear && pfetch'                                     \
-    pm='paru'
+    pm='sudo pacman'                                        \
+    pman='sudo pacman'
     
  ###################### Easy things #########################
                                                       alias \
