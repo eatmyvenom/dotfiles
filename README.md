@@ -26,7 +26,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Screenshots  - scrot
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
-* File browser - lf 
+* File browser - nnn 
 * Web browser  - firefox-nightly
 * IDE          - VScode
 * Compositor   - picom-git 
