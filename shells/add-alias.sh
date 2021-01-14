@@ -21,6 +21,7 @@
  ###################### Easy things #########################
                                                       alias \
     kernels='ls /boot | grep vmlinuz'                       \
+    m='~/dots/scripts/m'                                    \
     root='sudo su root'                                     \
     top='bpytop'                                            \
     math='bc -l'                                            \

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec "~/dots/scripts/menus/$1.menu"
