@@ -15,7 +15,7 @@ super + Tab
 	~/.config/rofi/launchers-git/launcher.sh
 
 super + control + Tab
-	dmenu_run -l 8 -sb \#0066cc -fn Fira\ Code -o 0.8 -dim 0.004 -w 800 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")/2-400)) -y 1000   
+	ls /usr/share/applications | cut -d'.' -f1 | dmenu -l 8 -sb \#0066cc -fn Fira\ Code -o 0.8 -dim 0.004 -w 800 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")/2-400)) -y 1000
 
 # switch apps
 alt + Tab
