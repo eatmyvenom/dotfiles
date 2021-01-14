@@ -1,4 +1,4 @@
 #/bin/sh
 wm=$1
-"~/dots/scripts/setWM${wm}.sh"
+~/dots/scripts/setWM/${wm}.sh
 exec "/usr/bin/startx"
