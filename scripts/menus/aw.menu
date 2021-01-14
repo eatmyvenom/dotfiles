@@ -1,0 +1,4 @@
+#!/bin/sh
+
+search=$(echo "" | rofi -no-lazy-grab -theme ~/.config/rofi/launchers-git/blurry-dmenu.rasi -dmenu -p 'Arch Wiki:')
+[ -n "$search" ] && xdg-open "https://wiki.archlinux.org/index.php?search=$search" || echo 'No query'
