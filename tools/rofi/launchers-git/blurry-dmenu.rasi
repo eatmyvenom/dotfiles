@@ -23,9 +23,9 @@ configuration {
 
 * {
     background:                     #181c3000;
-    background-color:               #181c3066;
+    background-color:               #181c30aa;
     background-entry:               #00000000;
-    background-alt:                 #181c304c;
+    background-alt:                 #0066ccff;
     foreground:                     #f2f2f2EE;
     foreground-selected:            #ffffffFF;
     urgent:                         #E91E6366;

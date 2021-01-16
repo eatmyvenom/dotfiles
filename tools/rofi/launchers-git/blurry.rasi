@@ -23,11 +23,11 @@ configuration {
 
 * {
     background:                     #181c3000;
-    background-color:               #181c304c;
+    background-color:               #181c30aa;
     background-entry:               #00000000;
-    background-alt:                 #181c304c;
+    background-alt:                 #0066ccff;
     foreground:                     #f2f2f2EE;
-    foreground-selected:            #ffffffFF;
+    foreground-selected:            #ffffffff;
     urgent:                         #E91E6366;
     urgent-selected:                #E91E6377;
 }
