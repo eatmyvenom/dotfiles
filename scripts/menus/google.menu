@@ -1,0 +1,4 @@
+#!/bin/sh
+
+search=$(echo "" | rofi -no-lazy-grab -theme ~/.config/rofi/launchers-git/blurry-dmenu.rasi -dmenu -p 'Google:')
+[ -n "$search" ] && xdg-open "https://google.com/search?q=$search" || echo 'No query'

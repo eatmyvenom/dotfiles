@@ -1,0 +1,5 @@
+#!/bin/sh
+
+~/dots/scripts/m $(ls ~/dots/scripts/menus |\
+    sed 's/\.menu//g' |\
+    rofi -no-lazy-grab -theme ~/.config/rofi/launchers-git/blurry-dmenu.rasi -dmenu -p "Menu")

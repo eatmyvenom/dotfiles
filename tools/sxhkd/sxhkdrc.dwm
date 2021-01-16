@@ -11,11 +11,15 @@ alt + F4
 
 # launch apps
 
+super + p
+	~/dots/scripts/m supermenu
+
 super + Tab
 	~/.config/rofi/launchers-git/launcher.sh
 
 super + control + Tab
-	ls /usr/share/applications | cut -d'.' -f1 | dmenu -l 8 -sb \#0066cc -fn Fira\ Code -o 0.8 -dim 0.004 -w 800 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")/2-400)) -y 1000
+	dmenu_run -l 6 -g 4 -sb \#44a3e7 -fn Fira\ Code -z 1250 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")/2-(1250/2))) -y 1000 -h 50 -nb \#181c30
+
 
 # switch apps
 alt + Tab

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rofi -no-lazy-grab -theme ~/.config/rofi/launchers-git/blurry.rasi -show file-browser
