@@ -2,23 +2,31 @@
 
 ######################## Better versions #####################
                                                       alias \
-    ls='lsd'                                                \
     ll='lsd -la'                                            \
     lh='lsd -d .*'                                          \
     cp='cp -i'                                              \
     rm='rm -I --preserve-root'                              \
-    mkx='chmod +x'                                          \
     clr='clear'                                             \
     mkdir='mkdir -pv'                                       \
-    grep='grep --color'                                     \
     sudo='sudo -p "Enter user password: "'                  \
     u='clear && ufetch'                                     \
     ul='u | lolcat'                                         \
     p='clear && pfetch'                                     \
-    pm='sudo pacman'                                        \
-    pman='sudo pacman'
     
- ###################### Easy things #########################
+
+####################### Core Utils ##########################
+                                                      alias \
+    ls='lsd'                                                \
+    sed='ssed'                                              \
+    echo='uu-echo -e'                                       \
+    md5sum='uu-hashsum --md5'                               \
+    sha1sum='uu-hashsum --sha1'                             \
+    sha224sum='uu-hashsum --sha224'                         \
+    sha256sum='uu-hashsum --sha256'                         \
+    sha384sum='uu-hashsum --sha384'                         \
+    sha512sum='uu-hashsum --sha512'                         \
+    ln='uu-ln'
+####################### Easy things #########################
                                                       alias \
     kernels='ls /boot | grep vmlinuz'                       \
     m='~/dots/scripts/m'                                    \
@@ -39,9 +47,7 @@
     unixtime='date +%s'                                     \
     c="clear && neofetch"                                   \
     cronstatus="plss \$(pidof crond)"                       \
-    zip="tar -czvf"                                         \
-    unzip="tar -xzvf"                                       \
-    temp="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"  \
+    therm="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"  \
 
 
 ##################### Actual aliases #########################
@@ -68,21 +74,16 @@
     tn='tmux new -s'                                        \
     trname='tmux rename-session -t'                         \
     tnd='tmux new -d -s'                                    \
-    trname='tmux rename-session -t'                         \
     tk='tmux kill-session -t'                               \
     tclk='tmux clock-mode'                                  \
     td='tmux detach'
 
 ######################## Scripts ############################
                                                       alias \
-    unlck='~/scripts/unlock'                                \
-    lock='~/scripts/lock'                                   \
-    doom='~/.emacs.d/bin/doom'                              \
     displayOff='~/scripts/displayOff'                       \
     displayOn='~/scripts/displayOn'                         
 
 ######################### extras ############################
                                                       alias \
     plss='pstree -TSlhC age'                                \
-    pls='plss -p'                                           \
-    pasteIX='curl -F "f:1=<-" ix.io'                        
+    pls='plss -p'                                           

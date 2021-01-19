@@ -35,8 +35,9 @@
 *.color7:       #ccccc6
 *.color15:      #f8f8f2
 
-XTerm*transparent: true
-URxvt*font: xft:Fira Code:pixelsize=24:bold:antialias=true:hinting=true
+*transparent: false
+*font: Fira Code Medium:pixelsize=24:bold:antialias=true:hinting=true
+URxvt*font: xft:Fira Code Medium:pixelsize=24:bold:antialias=true:hinting=true
 URxvt.depth: 32
 URxvt.background: [60]#181c30
 URxvt.scrollBar: false
