@@ -1,39 +1,39 @@
 ! special
-*.foreground:   #ffffff
-*.background:   #181c30
-*.cursorColor:  #ffffff
+*.foreground:   #c5c8c6
+*.background:   #29174d
+*.cursorColor:  #c5c8c6
 
 ! black
-*.color0:       #1b1d1e
-*.color8:       #505354
+*.color0:       #3e1f66
+*.color8:       #826b99
 
 ! red
-*.color1:       #ee0061
-*.color9:       #b5205d
+*.color1:       #ff4d6a
+*.color9:       #802635 
 
 ! green
-*.color2:       #00d492
-*.color10:      #00b37b
+*.color2:       #88ff4d
+*.color10:      #448026
 
 ! yellow
-*.color3:       #dcde19
-*.color11:      #b6b82b
+*.color3:       #ffe14d
+*.color11:      #b39e36
 
 ! blue
-*.color4:       #0066cc
-*.color12:      #333399
+*.color4:       #4d61ff
+*.color12:      #262e36
 
 ! magenta
-*.color5:       #8c54fe
-*.color13:      #6d00cc
+*.color5:       #884dff
+*.color13:      #442680
 
 ! cyan
-*.color6:       #44a3e7
-*.color14:      #277dbc
+*.color6:       #4da6ff
+*.color14:      #284f80
 
 ! white
-*.color7:       #ccccc6
-*.color15:      #f8f8f2
+*.color7:       #c4c3c7
+*.color15:      #746f80
 
 *transparent: false
 *font: Fira Code Medium:pixelsize=24:bold:antialias=true:hinting=true
