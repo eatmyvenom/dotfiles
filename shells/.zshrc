@@ -17,7 +17,7 @@ plugins=(git fzf fzf-tab zsh-autosuggestions autoupdate fast-syntax-highlighting
 source $ZSH/oh-my-zsh.sh
 
 
-ZSH_AUTOSUGGEST_STRATEGY=(completion history)
+ZSH_AUTOSUGGEST_STRATEGY=(completion)
 ZSH_AUTOSUGGEST_USE_ASYNC="joe mama"
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=500
 
