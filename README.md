@@ -23,7 +23,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 
 ## Other stuff
 
-* Screenshots  - scrot
+* Screenshots  - maim
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
 * File browser - nnn 
