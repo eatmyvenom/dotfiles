@@ -62,8 +62,6 @@
     update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg' \
     svim='sudo nvim'                                        \
     svi='sudo nvim'                                         \
-    fln='grep -rnw'                                         \
-    findline='grep -rnw'                                    \
     scho='sudo echo'                                        \
     icat='kitty +kitten icat'                               
 
