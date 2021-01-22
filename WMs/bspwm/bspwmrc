@@ -1,11 +1,9 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
-
 # desktop config
 
-bspc monitor DP-0 -d I II III IV 
-bspc monitor HDMI-0 -d V VI VII VIII IX X
+bspc monitor DP-0 -d I II III IV V VI VII VIII IX X
+bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 0
 
 # borders and gaps
 

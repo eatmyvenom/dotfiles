@@ -2,10 +2,6 @@
 ######### General hotkeys #########
 ###################################
 
-# lock screen
-super + l
-	betterlockscreen -l
-
 # kill apps
 super + shift + q
 	xdotool windowkill $(xdotool getactivewindow)  
@@ -13,12 +9,14 @@ super + shift + q
 alt + F4 
 	xdotool windowkill $(xdotool getactivewindow)  
 
-# launch apps
-super + space
-	~/.config/rofi/launchers-git/launcher.sh
+super + p
+	~/dots/scripts/m supermenu
 
 super + Tab
 	~/.config/rofi/launchers-git/launcher.sh
+
+super + control + Tab
+	dmenu_run -l 6 -g 4 -sb \#44a3e7 -fn Fira\ Code -z 1250 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")
 
 # switch apps
 alt + Tab
@@ -26,14 +24,11 @@ alt + Tab
 
 # start terminal
 super + Return
-	kitty
-
-control + shift + t
-	kitty
+	~/dots/scripts/terminal
 
 # take screenshots
 super + shift + s
-	sleep 0.25 && touch /tmp/scrotshot.png && rm -f /tmp/scrotshot.png && scrot -sz /tmp/scrotshot.png && xclip -i /tmp/scrotshot.png -selection clipboard -t image/png
+	maim -s -u -o | xclip -selection clipboard -t image/png -i
 
 # control sound/music
 XF86AudioPlay
@@ -63,6 +58,9 @@ XF86AudioLowerVolume
 
 super + {_,shift + }{1,2,3,4,5,6,7,8,9,0}
     bspc {desktop -f,node -d} '{I,II,III,IV,V,VI,VII,VIII,IX,X}'
+
+super + control + {_,shift + }{1,2,3,4,5,6,7,8,9,0}
+    bspc {desktop -f,node -d} '{1,2,3,4,5,6,7,8,9,0}'
 
 super + shift + r
 	bspc wm -r
