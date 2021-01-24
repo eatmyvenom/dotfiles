@@ -11,7 +11,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 ## What is here
 
 * WMs             - 2bwm / awesome / bspwm / dwm / i3 / openbox / sowm / herbstluftwm
-* Terminals       - alacritty / kitty / st / termite / tilda / xterm / urxvt / aterm
+* Terminals       - alacritty / kitty / st / termite / tilda / xterm / urxvt / aterm / hyper / lxterm
 * Backround       - nitrogen / feh
 * Launcher        - Rofi / dmenu
 * Editor          - kakoune / neovim
