@@ -74,7 +74,7 @@
  }
  
  .tab-close-button {
-  /*display: none !important;*/
+   display: none;
  }
  
  .tab-text {
@@ -161,7 +161,7 @@
  }
  
  .toolbarbutton-icon {
- /* filter: drop-shadow(0 0 0.75rem crimson); */
+   filter: drop-shadow(0 0 0.75rem crimson);
  }
  
  #urlbar-results {
@@ -306,7 +306,7 @@
  }
  
  #sidebar-switcher-target {
- /*   color: white !important; */
+   color: white !important;
  }
  
  #sidebar-box {
