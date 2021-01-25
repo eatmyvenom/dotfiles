@@ -27,7 +27,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Screenshots  - maim
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
-* File browser - nnn
+* File browser - nnn / qtfm
 * Web browser  - firefox-nightly
 * IDE          - VScode
 * Compositor   - picom-git
