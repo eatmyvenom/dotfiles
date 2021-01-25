@@ -1,6 +1,6 @@
 # i3 config file (v4)
-gaps inner 15
-gaps outer 5
+gaps inner 10
+gaps outer 10
 
 # font
 font pango:monospace 14
@@ -36,16 +36,11 @@ exec_always --no-startup-id ~/.config/autostart.sh
 
 for_window [urgent="latest"] focus
 focus_on_window_activation   focus
-
 default_orientation horizontal
-
 new_window none
-
 popup_during_fullscreen smart
 
 exec --no-startup-id i3-msg workspace $WS1
-##############################################################
-
 
 #bar {
 #    status_command echo 'bruh'

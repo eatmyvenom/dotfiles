@@ -1,5 +1,3 @@
-/** Configured For Applets **/
-
 configuration {
   modi: "window,drun,run,ssh"; 
   show-icons:         true;
@@ -7,6 +5,5 @@ configuration {
   location: 5;
   yoffset: -50;
   xoffset: -20;
-  terminal: "/usr/bin/kitty";
+  terminal: "/usr/bin/st";
 }
-

@@ -1266,11 +1266,6 @@ getoutputs(xcb_randr_output_t *outputs, const int len,
 				NULL)) == NULL)
 			continue;
 
-	//name_len = MIN(16, xcb_randr_get_output_info_name_length(output));
-	//name = malloc(name_len+1);
-	//snprintf(name, name_len+1, "%.*s", name_len,
-	//		xcb_randr_get_output_info_name(output));
-
 	if (XCB_NONE != output->crtc) {
 		icookie = xcb_randr_get_crtc_info(conn, output->crtc,
 				timestamp);
@@ -1631,9 +1626,6 @@ start(const Arg *arg)
 {
 	if (fork())
 		return;
-
-//	if (conn)
-//		close(screen->root);
 
 	setsid();
 	execvp((char*)arg->com[0], (char**)arg->com);
