@@ -1,4 +1,5 @@
 # dotfiles
+
 my linux dotfiles with my cool shit
 
 this image is slightly out of date but gets the point across:
@@ -15,7 +16,7 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Backround       - nitrogen / feh
 * Launcher        - Rofi / dmenu
 * Editor          - kakoune / neovim
-* Shells          - Bash / zsh / mksh / tcsh / fish / sh / dash 
+* Shells          - Bash / zsh / mksh / tcsh / fish / sh / dash
 * Hotkeys         - sxhkd
 * Bar             - Polybar (I'll do a tint2 some day)
 * Process Manager - Runit
@@ -26,10 +27,10 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 * Screenshots  - maim
 * Music player - ytmdesktop (with some custom css)
 * Visualizer   - cli-visualizer
-* File browser - nnn 
+* File browser - nnn
 * Web browser  - firefox-nightly
 * IDE          - VScode
-* Compositor   - picom-git 
+* Compositor   - picom-git
 * Session      - Custom / lxsession
 * GTK theme    - Arc-dark (I really want a custom one and ill work on that but if anyone can help with that ill love you forever)
 
@@ -37,13 +38,13 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 
 Recently I have moved from my autostart script just starting things to having `runit` monitor and supervise processes. This shift has been quite easy and runit has been great to use. If you want to not use runit then just use the default script in autostart, otherwise use the runit script.
 
-The runit configuration requires you to 
+The runit configuration requires you to
 
 ### Deps
 
 So here is the base of what is required to get the stuff to recreate this no matter what terminal/wm
 
-```
+``` none
 sxhkd polybar neofetch feh cli-visualizer picom rofi
 ```
 
@@ -52,21 +53,25 @@ if you want a command to paste in your terminal for this then here
 #### Arch
 
 with paru
-```
+
+``` bash
 paru -S sxhkd-git polybar-git neofetch feh cli-visualizer picom rofi
 ```
 
 or for yay
-```
+
+``` bash
 yay -S sxhkd-git polybar-git neofetch feh cli-visualizer picom rofi
 ```
 
 or without aur
-```
+
+``` bash
 pacman -S sxhkd polybar neofetch feh cli-visualizer picom rofi
 ```
 
 #### Void
-```
+
+``` bash
 xbps-install sxhkd polybar neofetch feh cli-visualizer picom rofi
 ```

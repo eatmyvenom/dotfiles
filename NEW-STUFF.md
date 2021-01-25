@@ -25,7 +25,7 @@ Terminal configs should follow these guidelines here
 * Color 14 - `#277dbc`
 * Color 15 - `#f8f8f2`
 * Background - `#181c30`
-* Foreground - `#e6f2ff` 
+* Foreground - `#e6f2ff`
 
 ### Other stuff
 
@@ -33,12 +33,12 @@ Terminal configs should follow these guidelines here
 * Cursor - Block
 * Transparency - 60%
 
-
 ## WM
 
 Window manager configs should follow these guiidelines here
 
 ### General stuff
+
 * Gaps - 20px
 * Tiling mode - Dwindle
 * Workspaces - 9 (per moniter if possible)
@@ -68,5 +68,3 @@ For anything else look at some of the extra keys on other wms already configured
 ## Processes
 
 Add it to the autostart and make a runit script for it as well.
-
-
