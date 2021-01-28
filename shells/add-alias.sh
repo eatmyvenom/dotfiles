@@ -26,7 +26,7 @@
     root='sudo su root'                                     \
     move="mv"                                               \
     copy="cp"                                               \
-    rst="cd && c"                                         \
+    rst="cd && c"                                           \
     clr='clear'                                             \
     ca='clear'                                              \
     fetch='neofetch'                                        \
