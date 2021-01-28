@@ -4,15 +4,13 @@
                                                       alias \
     ll='lsd -la'                                            \
     lh='lsd -d .*'                                          \
+    ls='lsd'                                                \
     cp='cp -i'                                              \
     rm='rm -I --preserve-root'                              \
-    clr='clear'                                             \
-    ca='clear'                                              \
     mkdir='mkdir -pv'
 
 ####################### Core Utils ##########################
                                                       alias \
-    ls='lsd'                                                \
     sed='ssed'                                              \
     echo='uu-echo -e'                                       \
     md5sum='uu-hashsum --md5'                               \
@@ -28,16 +26,16 @@
     root='sudo su root'                                     \
     move="mv"                                               \
     copy="cp"                                               \
-    rst="home && c"                                         \
+    rst="cd && c"                                         \
+    clr='clear'                                             \
+    ca='clear'                                              \
     fetch='neofetch'                                        \
     gtop='nvidia-smi'                                       \
     del='rm'                                                \
     delete='rm'                                             \
     unixtime='date +%s'                                     \
     c="clear && neofetch"                                   \
-    cronstatus="plss \$(pidof crond)"                       \
-    therm="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"  \
-
+    cronstatus="plss \$(pidof crond)"
 
 ##################### Actual aliases #########################
                                                       alias \
