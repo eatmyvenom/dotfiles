@@ -9,7 +9,7 @@
     clr='clear'                                             \
     ca='clear'                                              \
     mkdir='mkdir -pv'
-    
+
 ####################### Core Utils ##########################
                                                       alias \
     ls='lsd'                                                \
@@ -43,6 +43,7 @@
                                                       alias \
     pi='ssh 10.0.1.2'                                       \
     laptop='ssh 10.0.1.22'                                  \
+    pc='ssh 10.0.1.25'                                      \
     rs='source ~/.zshrc'                                    \
     usage='du -h --max-depth=1 | sort -hr'                  \
     sendkey='DISPLAY=:0 xdotool key'                        \
@@ -51,7 +52,6 @@
     update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg' \
     svim='sudo nvim'                                        \
     svi='sudo nvim'                                         \
-    scho='sudo echo'                                        \
     icat='kitty +kitten icat'                               
 
 ######################## Tmux ###############################
@@ -74,3 +74,7 @@
                                                       alias \
     plss='pstree -TSlhC age'                                \
     pls='plss -p'                                           
+
+if [ -f "/usr/bin/doas" ]; then 
+    alias sudo='doas'
+fi
