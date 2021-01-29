@@ -49,14 +49,8 @@ static void halfandcentered(const Arg *arg)
 	Arg arg3 = {.i=TWOBWM_TELEPORT_CENTER};
 	teleport(&arg3);
 }
-///---Sloppy focus behavior---///
-/*
- * Command to execute when switching from sloppy focus to click to focus
- * The strings "Sloppy" and "Click" will be passed as the last argument
- * If NULL this is ignored
- */
+
 static const char *sloppy_switch_cmd[] = {};
-//static const char *sloppy_switch_cmd[] = { "notify-send", "toggle sloppy", NULL };
 static void toggle_sloppy(const Arg *arg)
 {
 	is_sloppy = !is_sloppy;
@@ -64,32 +58,7 @@ static void toggle_sloppy(const Arg *arg)
 		start(arg);
 	}
 }
-///---Shortcuts---///
-/* Check /usr/include/X11/keysymdef.h for the list of all keys
- * 0x000000 is for no modkey
- * If you are having trouble finding the right keycode use the `xev` to get it
- * For example:
- * KeyRelease event, serial 40, synthetic NO, window 0x1e00001,
- *  root 0x98, subw 0x0, time 211120530, (128,73), root:(855,214),
- *  state 0x10, keycode 171 (keysym 0x1008ff17, XF86AudioNext), same_screen YES,
- *  XLookupString gives 0 bytes: 
- *  XFilterEvent returns: False
- *
- *  The keycode here is keysym 0x1008ff17, so use  0x1008ff17
- *
- *
- * For AZERTY keyboards XK_1...0 should be replaced by :
- *      DESKTOPCHANGE(     XK_ampersand,                     0)
- *      DESKTOPCHANGE(     XK_eacute,                        1)
- *      DESKTOPCHANGE(     XK_quotedbl,                      2)
- *      DESKTOPCHANGE(     XK_apostrophe,                    3)
- *      DESKTOPCHANGE(     XK_parenleft,                     4)
- *      DESKTOPCHANGE(     XK_minus,                         5)
- *      DESKTOPCHANGE(     XK_egrave,                        6)
- *      DESKTOPCHANGE(     XK_underscore,                    7)
- *      DESKTOPCHANGE(     XK_ccedilla,                      8)
- *      DESKTOPCHANGE(     XK_agrave,                        9)*
- */
+
 #define DESKTOPCHANGE(K,N) \
 {  MOD ,             K,              changeworkspace, {.i=N}}, \
 {  MOD |SHIFT,       K,              sendtoworkspace, {.i=N}},

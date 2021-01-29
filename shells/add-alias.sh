@@ -7,12 +7,8 @@
     cp='cp -i'                                              \
     rm='rm -I --preserve-root'                              \
     clr='clear'                                             \
-    mkdir='mkdir -pv'                                       \
-    sudo='sudo -p "Enter user password: "'                  \
-    u='clear && ufetch'                                     \
-    ul='u | lolcat'                                         \
-    p='clear && pfetch'                                     \
-    
+    ca='clear'                                              \
+    mkdir='mkdir -pv'
 
 ####################### Core Utils ##########################
                                                       alias \
@@ -28,22 +24,15 @@
     ln='uu-ln'
 ####################### Easy things #########################
                                                       alias \
-    kernels='ls /boot | grep vmlinuz'                       \
     m='~/dots/scripts/m'                                    \
     root='sudo su root'                                     \
-    top='bpytop'                                            \
-    math='bc -l'                                            \
-    home='cd ~'                                             \
     move="mv"                                               \
-    hostname='cat /etc/hostname'                            \
     copy="cp"                                               \
-    javas='archlinux-java'                                  \
     rst="home && c"                                         \
-    testInternet="ping 8.8.8.8 -c 1"                        \
     fetch='neofetch'                                        \
     gtop='nvidia-smi'                                       \
-    del='unlink'                                            \
-    delete='unlink'                                         \
+    del='rm'                                                \
+    delete='rm'                                             \
     unixtime='date +%s'                                     \
     c="clear && neofetch"                                   \
     cronstatus="plss \$(pidof crond)"                       \
@@ -54,6 +43,7 @@
                                                       alias \
     pi='ssh 10.0.1.2'                                       \
     laptop='ssh 10.0.1.22'                                  \
+    pc='ssh 10.0.1.25'                                      \
     rs='source ~/.zshrc'                                    \
     usage='du -h --max-depth=1 | sort -hr'                  \
     sendkey='DISPLAY=:0 xdotool key'                        \
@@ -62,9 +52,6 @@
     update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg' \
     svim='sudo nvim'                                        \
     svi='sudo nvim'                                         \
-    fln='grep -rnw'                                         \
-    findline='grep -rnw'                                    \
-    scho='sudo echo'                                        \
     icat='kitty +kitten icat'                               
 
 ######################## Tmux ###############################
@@ -87,3 +74,7 @@
                                                       alias \
     plss='pstree -TSlhC age'                                \
     pls='plss -p'                                           
+
+if [ -f "/usr/bin/doas" ]; then 
+    alias sudo='doas'
+fi
