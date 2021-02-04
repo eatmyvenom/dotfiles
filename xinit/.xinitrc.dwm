@@ -2,4 +2,5 @@
 
 ~/.config/autostart.sh >> ~/logs/latest.log
 echo "New session" >> ~/logs/dwm.log
+xsetroot -solid \#181c30
 exec dwm >> ~/logs/dwm.log
