@@ -14,7 +14,9 @@
                                                       alias \
     ls='lsd'                                                \
     sed='ssed'                                              \
-    echo='uu-echo -e'                                       \
+    
+if [ -f "/usr/bin/uu-ln" ]; then
+alias                                                       \
     md5sum='uu-hashsum --md5'                               \
     sha1sum='uu-hashsum --sha1'                             \
     sha224sum='uu-hashsum --sha224'                         \
@@ -22,6 +24,8 @@
     sha384sum='uu-hashsum --sha384'                         \
     sha512sum='uu-hashsum --sha512'                         \
     ln='uu-ln'
+fi
+
 ####################### Easy things #########################
                                                       alias \
     m='~/dots/scripts/m'                                    \
