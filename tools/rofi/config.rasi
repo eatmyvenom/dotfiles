@@ -5,5 +5,5 @@ configuration {
   location: 5;
   yoffset: -50;
   xoffset: -20;
-  terminal: "/usr/bin/st";
+  terminal: "/usr/bin/kitty";
 }
