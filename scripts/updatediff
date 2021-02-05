@@ -1,0 +1,9 @@
+#!/bin/sh
+
+last_upgrade=$(tac /var/log/pacman.log |
+  grep -m 1 -oP '(?<=\[)[0-9-T:+]+(?=(\])\s([\[\]\w]+)\s(starting full system upgrade))')
+
+t1=$(date +%s -d $last_upgrade)
+t2=$(date +%s)
+
+echo "$(((t2 - t1) / 60))m ago"
