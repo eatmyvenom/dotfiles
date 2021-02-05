@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rofi -no-lazy-grab -theme ~/.config/rofi/launchers-git/blurry-dmenu.rasi -show run -disable-history -p "Exec"
