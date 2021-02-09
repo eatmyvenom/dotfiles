@@ -1,3 +1,0 @@
-#!/bin/sh
-
-xclip -i /tmp/gscreenshot-cli-clip.png -selection clipboard -t image/png -quiet
