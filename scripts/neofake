@@ -1,0 +1,5 @@
+#!/bin/bash
+newOS=$1
+newPack=$2
+clear
+exec neofetch --source auto --ascii_distro $(echo $newOS) | sed -r "s/Void Linux/$(echo $newOS)/g" | sed -r "s/pacman/$(echo $newPack)/g"  

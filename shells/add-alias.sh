@@ -13,7 +13,6 @@
 ####################### Core Utils ##########################
                                                       alias \
     ls='lsd'                                                \
-    sed='ssed'                                              \
     
 if [ -f "/usr/bin/uu-ln" ]; then
 alias                                                       \
