@@ -11,7 +11,6 @@
 
 ####################### Core Utils ##########################
                                                       alias \
-    sed='ssed'                                              \
     echo='uu-echo -e'                                       \
     md5sum='uu-hashsum --md5'                               \
     sha1sum='uu-hashsum --sha1'                             \
