@@ -45,18 +45,18 @@ audio.stereo.enabled=false
 #visualizer.spectrum.bar.spacing=1
 
 ##Available smoothing options are monstercat, sgs, none.
-#visualizer.spectrum.smoothing.mode=sgs
+visualizer.spectrum.smoothing.mode=monstercat
 
 ##This configures the falloff effect on the spectrum visualizer. Available falloff options are fill,top,none.
 ##Defaults to "fill"
-#visualizer.spectrum.falloff.mode=fill
+visualizer.spectrum.falloff.mode=top
 
 ##Configures how fast the falloff character falls. This is an exponential falloff so values usually look
 ##best 0.9+ and small changes in this value can have a large effect. Defaults to 0.95
-visualizer.spectrum.falloff.weight=0.9
+visualizer.spectrum.falloff.weight=0.95
 
 ##Margins in percent of total screen for spectrum visualizer. All margins default to 0
-#visualizer.spectrum.top.margin=0.30
+#visualizer.spectrum.top.margin=0.10
 #visualizer.spectrum.bottom.margin=0.10
 #visualizer.spectrum.right.margin=0.10
 #visualizer.spectrum.left.margin=0.10
@@ -72,7 +72,7 @@ visualizer.sgs.smoothing.points=2
 
 ##Configures what character the ellipse visualizer will use. Specifying a space (e.g " ") means the
 ##background will be colored instead of the character. Defaults to "█".
-#visualizer.ellipse.character=#
+visualizer.ellipse.character=#
 
 ##The radius of each color ring in the ellipse visualizer. Defaults to 2.
 #visualizer.ellipse.radius=2
@@ -84,7 +84,7 @@ visualizer.sgs.smoothing.points=2
 
 
 ##Turns off overriding the user's terminal colors. This is true by default.
-#colors.override.terminal=false
+colors.override.terminal=true
 
 ##Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/ directory. The default scheme is "colors".
 colors.scheme=rainbow
