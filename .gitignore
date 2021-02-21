@@ -2,3 +2,6 @@ dmenu2
 runit/services/*/supervise
 runit/runsvdir/*/supervise
 tools/vis/vis.log
+*.mp4
+*.webm
+*.mkv
