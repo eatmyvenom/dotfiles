@@ -20,6 +20,10 @@ super + Tab
 super + control + Tab
 	dmenu_run -l 6 -g 4 -sb \#44a3e7 -fn Fira\ Code -z 1250 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")/2-(1250/2))) -y 1000 -h 50 -nb \#181c30
 
+# layouts
+
+super + t 
+	dwmc setlayoutex 7
 
 # switch apps
 alt + Tab
@@ -31,8 +35,7 @@ super + Return
 
 # take screenshots
 super + shift + s
-	maim -s -u -o | xclip -selection clipboard -t image/png -i
-	#sleep 0.25 && touch /tmp/scrotshot.png && rm -f /tmp/scrotshot.png && scrot -sz /tmp/scrotshot.png && xclip -i /tmp/scrotshot.png -selection clipboard -t image/png
+	maim -s -u -o >/tmp/screenshot.png && xclip -selection clipboard -t image/png -i /tmp/screenshot.png
 
 # control sound/music
 XF86AudioPlay
