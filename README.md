@@ -24,15 +24,19 @@ I am gonna make a guidelines file if you want to use this look and feel but with
 
 ## Other stuff
 
-* Screenshots  - maim
-* Music player - ytmdesktop (with some custom css)
-* Visualizer   - cli-visualizer
-* File browser - nnn / qtfm
-* Web browser  - firefox-nightly
-* IDE          - VScode
-* Compositor   - picom-git
-* Session      - Custom / lxsession
-* GTK theme    - Arc-dark (I really want a custom one and ill work on that but if anyone can help with that ill love you forever)
+* Screenshots   - maim
+* Music player  - ytmdesktop (with some custom css)
+* Visualizer    - cava / cli-visualizer
+* File browser  - nnn / qtfm
+* Web browser   - firefox-nightly
+* IDE           - VScode
+* Compositor    - picom-git
+* Session       - Custom / lxsession
+* GTK theme     - Arc-dark (I really want a custom one and ill work on that but if anyone can help with that ill love you forever)
+* Audio         - Pipewire
+* Video player  - mpv
+* Matrix client - element
+* Icons         - candy icons
 
 ### Notes
 
