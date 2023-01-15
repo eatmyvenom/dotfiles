@@ -3,65 +3,59 @@ title = Dunst
 class = Dunst
 monitor = 0
 follow = none
-geometry = "800x6-12+56"
+geometry = "3000x3000"
 indicate_hidden = yes
-shrink = yes
+shrink = no
 
-transparency = 0
+transparency = 0.9
 separator_height = 2
-padding = 24
-horizontal_padding = 24
-frame_width = 8
-frame_color = "#181c30"
+padding = 6
+horizontal_padding = 6
+frame_width = 2
+frame_color = "#91A7FF"
 separator_color = "#404859"
 
 font = mplus nerd font 8.5
 
-line_height = 0
+line_height = 1
 markup = full
-format = "<span size='x-large' font_desc='Fira Code 18' weight='normal' foreground='#f9f9f9'><b>%s</b>\n%b</span>"
-alignment = center
+format = "<span size='x-large' font_desc='Fira Code 8' weight='normal' foreground='#f9f9f9'><b>%s</b>\n%b</span>"
+alignment = left
 
-idle_threshold = 120
+idle_threshold = 360
 show_age_threshold = 60
 sort = no
-word_wrap = yes
+word_wrap = true
 ignore_newline = no
 stack_duplicates = false
-hide_duplicate_count = yes
+hide_duplicate_count = no
 show_indicators = yes
-sticky_history = no
+sticky_history = yes
 history_length = 50
 always_run_script = true
-corner_radius = 0
+corner_radius = 4
 icon_position = left
-max_icon_size = 128
+max_icon_size = 48
 
 #icon_path = /usr/share/icons/Papirus-Dark-Custom/48x48/actions/:/usr/share/icons/Papirus-Dark-Custom/48x48/apps/:/usr/share/icons/Papirus-Dark-Custom/48x48/devices/:/usr/share/icons/Papirus-Dark-Custom/48x48/emblems/:/usr/share/icons/Papirus-Dark-Custom/48x48/emotes/:/usr/share/icons/Papirus-Dark-Custom/48x48/mimetypes/:/usr/share/icons/Papirus-Dark-Custom/48x48/places/:/usr/share/icons/Papirus-Dark-Custom/48x48/status/
 
 browser = firefox-beta
 
-mouse_left_click = close_current
-mouse_middle_click = do_action
+mouse_left_click = do_action
+mouse_middle_click = close_current
 mouse_right_click = close_all
-
-[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-history = ctrl+Escape
-context = ctrl+shift+period
 
 [urgency_low]
 timeout = 3
-background = "#181c30"
+background = "#2d3040"
 foreground = "#f9f9f9"
 
 [urgency_normal]
 timeout = 6
-background = "#181c30"
+background = "#2d3040"
 foreground = "#f9f9f9"
 
 [urgency_critical]
-timeout = 0
-background = "#181c30"
+timeout = 4
+background = "#2d3040"
 foreground = "#f9f9f9"

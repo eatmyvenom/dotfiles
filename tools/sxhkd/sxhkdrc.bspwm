@@ -2,6 +2,9 @@
 ######### General hotkeys #########
 ###################################
 
+#super + Tab
+#        ~/.config/rofi/launchers-git/launcher.sh
+
 # kill apps
 super + shift + q
 	xdotool windowkill $(xdotool getactivewindow)  
@@ -9,20 +12,10 @@ super + shift + q
 alt + F4 
 	xdotool windowkill $(xdotool getactivewindow)  
 
-super + p
-	~/dots/scripts/m supermenu
-
-super + Tab
-	~/.config/rofi/launchers-git/launcher.sh
-
 super + control + Tab
 	dmenu_run -l 6 -g 4 -sb \#44a3e7 -fn Fira\ Code -z 1250 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")
 
-# switch apps
-alt + Tab
-	~/.config/rofi/switcher.sh
 
-# start terminal
 super + Return
 	~/dots/scripts/terminal
 
@@ -30,27 +23,23 @@ super + Return
 super + shift + s
 	maim -s -u -o | xclip -selection clipboard -t image/png -i
 
-# control sound/music
-XF86AudioPlay
-	playerctl play-pause
+XF86AudioPrev
+	playerctl previous
 
 XF86AudioNext
 	playerctl next
 
-XF86AudioPrev
-	playerctl previous
+XF86AudioPlay
+	playerctl play-pause
 
-XF86AudioStop
-	playerctl stop
-
-XF86AudioMute
-	pamixer -t
+XF86AudioLowerVolume
+	pamixer -d 1
 
 XF86AudioRaiseVolume
 	pamixer -i 1
 
-XF86AudioLowerVolume
-	pamixer -d 1
+XF86AudioMute
+	pamixer -t
 
 #############################
 ######## wm options #########

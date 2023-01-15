@@ -1,5 +1,5 @@
 #!/bin/sh
 
 ~/dots/scripts/vidbg.sh 1920x1080+0+0 ~/Pictures/wallpaper/moving/other.mp4 &
-~/dots/scripts/vidbg.sh 3840x2160+1920+0 ~/Pictures/wallpaper/moving/main.webm
+~/dots/scripts/vidbg.sh 3840x2160+1920+0 ~/Pictures/wallpaper/moving/main.mp4
 

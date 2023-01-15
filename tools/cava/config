@@ -30,8 +30,8 @@
 # the bandwidth of the visualizer.
 # Note: there is a minimum total bandwidth of 43Mhz x number of bars.
 # Cava will automatically increase the higher cutoff if a too low band is specified.
-; lower_cutoff_freq = 50
-higher_cutoff_freq = 12000
+lower_cutoff_freq = 50
+higher_cutoff_freq = 16000
 
 
 # Seconds with no input before cava goes to sleep mode. Cava will not perform FFT or drawing and
@@ -46,7 +46,7 @@ higher_cutoff_freq = 12000
 # 'raw' is an 8 or 16 bit (configurable via the 'bit_format' option) data
 # stream of the bar heights that can be used to send to other applications.
 # 'raw' defaults to 200 bars, which can be adjusted in the 'bars' option above.
-; method = ncurses
+method = ncurses
 
 # Visual channels. Can be 'stereo' or 'mono'.
 # 'stereo' mirrors both channels with low frequencies in center.
@@ -89,14 +89,14 @@ mono_option = average
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
 gradient_count = 8
-gradient_color_1 = '#0066cc'
-gradient_color_2 = '#0066cc'
-gradient_color_3 = '#44a3e7'
-gradient_color_4 = '#44a3e7'
-gradient_color_5 = '#6D00CC'
-gradient_color_6 = '#6d00cc'
-gradient_color_7 = '#8c54fe'
-gradient_color_8 = '#8c54fe'
+gradient_color_1 = '#44a3e7'
+gradient_color_2 = '#4E97EA'
+gradient_color_3 = '#588CED'
+gradient_color_4 = '#6281F0'
+gradient_color_5 = '#6D75F4'
+gradient_color_6 = '#776AF7'
+gradient_color_7 = '#815FFA'
+gradient_color_8 = '#8C54FE'
 
 
 

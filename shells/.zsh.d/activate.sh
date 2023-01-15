@@ -1,1 +1,0 @@
-/usr/share/autoenv-git/activate.sh
