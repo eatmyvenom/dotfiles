@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vnmm-Tokyonight
+Comment=An Flat Gtk+ theme based on Tokyonight
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vnmm
+MetacityTheme=Vnmm
+IconTheme=Vnmm
+CursorTheme=Vnmm
+ButtonLayout=close,minimize,maximize:menu
