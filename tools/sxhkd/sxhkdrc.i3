@@ -2,10 +2,6 @@
 ######### General hotkeys #########
 ###################################
 
-# lock screen
-super + l
-	betterlockscreen -l
-
 # kill apps
 super + shift + q
 	i3 'kill'
@@ -33,7 +29,7 @@ control + shift + t
 
 # take screenshots
 super + shift + s
-	sleep 0.25 && touch /tmp/scrotshot.png && rm -f /tmp/scrotshot.png && scrot -sz /tmp/scrotshot.png && xclip -i /tmp/scrotshot.png -selection clipboard -t image/png
+	maim -s -u -o | xclip -selection clipboard -t image/png -i
 
 # control sound/music
 XF86AudioPlay

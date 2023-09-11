@@ -1,0 +1,9 @@
+[Unit]
+Description=Check if updates system updates are available
+
+[Timer]
+OnActiveSec=5m
+Unit=checkupdates.service
+
+[Install]
+WantedBy=timers.target

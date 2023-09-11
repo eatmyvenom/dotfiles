@@ -2,17 +2,21 @@ window:
   x: 0
   y: 10
   decorations: none
+  opacity: 0.60
+  padding:
+    x: 10
+    y: 10
 
 font:
   normal:
-    family: Fira Mono for Powerline
-    style: Bold 
-
-  bold:
-    family: Fira Mono for Powerline
+    family: Fira Code
     style: Bold
 
-  size: 12.0
+  bold:
+    family: Fira Code
+    style: Bold
+
+  size: 16.0
 
 # Colors (by eatmyvenom)
 colors:
@@ -38,8 +42,6 @@ colors:
     cyan:    '#277DBC' # color14
     white:   '#f8f8f2' # color15
 
-
-background_opacity: 0.60
 
 cursor:
   style: Block

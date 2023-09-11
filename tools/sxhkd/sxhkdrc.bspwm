@@ -15,6 +15,8 @@ alt + F4
 super + control + Tab
 	dmenu_run -l 6 -g 4 -sb \#44a3e7 -fn Fira\ Code -z 1250 -x $(($(xdotool getdisplaygeometry|sed "s/ .*//gi")
 
+super + space
+	~/.config/rofi/launchers-git/launcher.sh
 
 super + Return
 	~/dots/scripts/terminal

@@ -1,0 +1,10 @@
+[Unit]
+Description=Check for package updates and cache them
+
+[Service]
+Type=oneshot
+Nice=19
+IOSchedulingClass=2
+IOSchedulingPriority=7
+ExecStartPre=/bin/sh -c "/usr/bin/checkupdates > /var/log/pacman-updates.log"
+ExecStart=/bin/sh -c "/usr/bin/checkupdates -d"
